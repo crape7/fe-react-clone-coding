@@ -1,5 +1,5 @@
 # 구현 화면
-![구현 화면](/image/capture.png)  
+![구현 화면](/md/capture.png)  
 # 컴포넌트 설명  
 ## header  
 ### example이라는 이름의 컴포넌트를 통해 메뉴바와 상단 부분을 만들었습니다.  
