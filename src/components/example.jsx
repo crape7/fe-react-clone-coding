@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { FiCamera } from "react-icons/fi";
 import { BsList } from "react-icons/bs";
@@ -56,20 +56,14 @@ const Box = styled.div`
   justify-content: center;
     flex-direction: row;
 `
-const TopBar= styled.div`
-    width: 100%;
-    height: 85px;
-    background-color: #343a40;
-    margin-top: -10px;
-    
-`
+
 const Box2 = styled.div`
    display: flex;
   justify-content: space-around;
     flex-direction: row;
 
     /* @media screen and (max-width: 1000px) {
-    justify-content: space-around;
+    align-items: space-between;
   } */
 `
 const Camera = styled(FiCamera)`
@@ -101,12 +95,43 @@ const BarText = styled.p`
     margin-left: 50px;
 `
 
+const TopBar= styled.div`
+    width: 100%;
+    height: 85px;
+    background-color: #343a40;
+    margin-top: -10px;
 
-const Example = (props) =>{
+`
+
+// const FullScreenContainer = styled.div`
+//   position: relative;
+//   animation: slideDown 0.3s ease forwards;
+//   transform: translateY(-100%);
+//   animation-play-state: ${({ isVisible }) => (isVisible ? 'running' : 'paused')};
+//   animation-fill-mode: forwards;
+
+//   @keyframes slideDown {
+//     0% {
+//       transform: translateY(-100%);
+//     }
+//     100% {
+//       transform: translateY(0%);
+//     }
+//   }
+// `;
+
+const Example = () => {
+  // const [isFullScreenVisible, setIsFullScreenVisible] = useState(false);
+
+  // const handleListClick = () => {
+  //   setIsFullScreenVisible(!isFullScreenVisible);
+  // };
+
     return(
         <>
         <GlobalStyle/>
-        
+
+        {/* <FullScreenContainer isVisible={isFullScreenVisible}> */}
         <TopBar>
           <Box2>
             <div>
@@ -119,10 +144,10 @@ const Example = (props) =>{
           </Box2>
         </TopBar>
 
-        <ExampleText>{props.exampleText}</ExampleText>
-        <ExampleContent>Something short and leading
-        about the collection below—its contents, <br/> the creator, etc. 
-        Make it short and sweet, but not too short so folks don’t<br/> simply skip over it entirely.</ExampleContent>
+        <ExampleText>Playlist</ExampleText>
+        <ExampleContent>"The first rule of drumming is that if you make a mistake, turn round and look
+          angrily at the bass player" - NICK MASON
+        </ExampleContent>
         
         <Box>
             <ExampleButton1>
@@ -132,6 +157,8 @@ const Example = (props) =>{
             <ButtonText2>Secondary action</ButtonText2>
             </ExampleButton2>
         </Box>
+
+        {/* </FullScreenContainer> */}
         </>
     )
 }

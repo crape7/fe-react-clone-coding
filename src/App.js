@@ -5,42 +5,26 @@ import Main from "./components/main";
 import Main2 from "./components/main2";
 import Main3 from "./components/main3";
 
+
+
+
 function App() {
   return <>
-  <Example exampleText="Album example"/>
+  <Example exampleText="Playlist"/>
   
-  <Main cardTitle="Thumbnail" cardContent="This is a wider card with supporting 
-  text below as a natural lead-in to additional
-   content. This content is a little bit longer." 
-   cardTitle2="Thumbnail" cardContent2="This is a wider card with supporting 
-   text below as a natural lead-in to additional
-    content. This content is a little bit longer."
-    cardTitle3="Thumbnail" cardContent3="This is a wider card with supporting 
-  text below as a natural lead-in to additional
-   content. This content is a little bit longer."/>
+  <Main /*cardTitle="You Are My Universe" */cardContent="You Are My Universe - Low Hanging Fruits" imgUrl1="./image/lhf.jpg"
+   /*cardTitle2="Thumbnail"*/ cardContent2="인사 - 나상현씨밴드" imgUrl2="./image/bandnah.jpg"
+    /*cardTitle3="Thumbnail"*/ cardContent3="Mercurial - 실리카겔" imgUrl3="./image/silcagel.jpg"/>
 
-<Main2 cardTitle="Thumbnail" cardContent="This is a wider card with supporting 
-  text below as a natural lead-in to additional
-   content. This content is a little bit longer." 
-   cardTitle2="Thumbnail" cardContent2="This is a wider card with supporting 
-   text below as a natural lead-in to additional
-    content. This content is a little bit longer."
-    cardTitle3="Thumbnail" cardContent3="This is a wider card with supporting 
-  text below as a natural lead-in to additional
-   content. This content is a little bit longer."/>
+<Main2 /*cardTitle="Thumbnail"*/ cardContent="Straight Line - LUCY" imgUrl4="./image/lucy.jpg"
+   /*cardTitle2="Thumbnail"*/ cardContent2="BUCKET LIST - 맥거핀(MGFF)" imgUrl5="./image/mgff.jpg"
+   /* cardTitle3="Thumbnail" */cardContent3="surf. - wave to earth" imgUrl6="./image/wavy.jpg"/>
 
-<Main3 cardTitle="Thumbnail" cardContent="This is a wider card with supporting 
-  text below as a natural lead-in to additional
-   content. This content is a little bit longer." 
-   cardTitle2="Thumbnail" cardContent2="This is a wider card with supporting 
-   text below as a natural lead-in to additional
-    content. This content is a little bit longer."
-    cardTitle3="Thumbnail" cardContent3="This is a wider card with supporting 
-  text below as a natural lead-in to additional
-   content. This content is a little bit longer."/>
+<Main3 /*cardTitle="Thumbnail"*/ cardContent="Like Feathers - SURL(설)" imgUrl7="./image/surl.jpg"
+   /*cardTitle2="Thumbnail"*/ cardContent2="off the menu - off the menu(오프더메뉴)" imgUrl8="./image/offthemenu.jpg"
+    /*cardTitle3="Thumbnail" */cardContent3="Tree - 오월오일" imgUrl9="./image/55.jpg"/>
 
-   
-  
+
   
   </>;
 }

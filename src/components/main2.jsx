@@ -6,17 +6,22 @@ const MainBox2 = styled.div`
     margin-top: -30px;
     display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+  }
 `
 const CardBox = styled.div`
     width: 465px;
   height: 500px;
-  background-color: gray;
+  /*background-color: gray;*/
   border-radius:5px;
   box-shadow: 0px 0px 3px 2px  lightgray;
   margin-top: 70px;
   margin-left: 210px;
   position:relative;
-  
+  background-image:url(${(props) => (props.imageUrl4)});
+  background-size: 100%;
 `
 const CardTitle = styled.p`
     font-size: 23px;
@@ -48,7 +53,7 @@ const CardButton1 = styled.div`
     height: 35px;
     border: 1.4px solid black;
     border-radius: 5px 0px 0px 5px;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 23px;
 `
 const ButtonText1 = styled.p`
@@ -81,13 +86,14 @@ const Time =  styled.p`
 const CardBox2 = styled.div`
     width: 465px;
   height: 500px;
-  background-color: gray;
+  /*background-color: gray;*/
   border-radius:5px;
   box-shadow: 0px 0px 3px 2px  lightgray;
   margin-top: 70px;
   margin-left: 45px;
   position:relative;
-  
+  background-image:url(${(props) => (props.imageUrl5)});
+  background-size: 100%;
 `
 const CardTitle2 = styled.p`
     font-size: 23px;
@@ -119,7 +125,7 @@ const CardButton12 = styled.div`
     height: 35px;
     border: 1.4px solid black;
     border-radius: 5px 0px 0px 5px;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 23px;
 `
 const ButtonText12 = styled.p`
@@ -153,13 +159,14 @@ const Time2 =  styled.p`
 const CardBox3 = styled.div`
     width: 465px;
   height: 500px;
-  background-color: gray;
+  /*background-color: gray;*/
   border-radius:5px;
   box-shadow: 0px 0px 3px 2px  lightgray;
   margin-top: 70px;
   margin-left: 45px;
   position:relative;
-  
+  background-image:url(${(props) => (props.imageUrl6)});
+  background-size: 100%;
 `
 const CardTitle3 = styled.p`
     font-size: 23px;
@@ -191,7 +198,7 @@ const CardButton13 = styled.div`
     height: 35px;
     border: 1.4px solid black;
     border-radius: 5px 0px 0px 5px;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 23px;
 `
 const ButtonText13 = styled.p`
@@ -227,7 +234,7 @@ const Main2 = (props) =>{
         <>
 <MainBox2>
           
-<CardBox>
+<CardBox imageUrl4 ={props.imgUrl4}>
     <CardTitle>{props.cardTitle}</CardTitle>
   <ContentBox>
     <CardContent>{props.cardContent}</CardContent>
@@ -241,7 +248,7 @@ const Main2 = (props) =>{
   </ContentBox>
 </CardBox>
 
-<CardBox2>
+<CardBox2 imageUrl5 ={props.imgUrl5}>
     <CardTitle2>{props.cardTitle2}</CardTitle2>
   <ContentBox2>
     <CardContent2>{props.cardContent2}</CardContent2>
@@ -255,7 +262,7 @@ const Main2 = (props) =>{
   </ContentBox2>
 </CardBox2>
 
-<CardBox3>
+<CardBox3 imageUrl6 ={props.imgUrl6}>
     <CardTitle3>{props.cardTitle3}</CardTitle3>
   <ContentBox3>
     <CardContent3>{props.cardContent3}</CardContent3>
